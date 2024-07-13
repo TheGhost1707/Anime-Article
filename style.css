@@ -1,0 +1,315 @@
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3f3f3;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+                background-color: rgba(0, 0, 0, 0.2); /* Warna latar belakang transparan */
+                background-image: url('img/bg-body.jpg'); /* Ganti dengan URL gambar latar belakang jika diinginkan */
+                background-size: cover; /* Agar gambar latar belakang mengisi seluruh layar */
+                background-blur: 10px; /* Tingkat kejernihan (0 untuk transparan, semakin tinggi semakin buram) */
+                background-attachment: fixed; /* Membuat latar belakang tetap di tempat saat menggulir halaman */
+                background-repeat: no-repeat;
+                background-position: center;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        .navbar {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+        }
+
+        .navbar a {
+            color: #fff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #555;
+        }
+
+        .container {
+            position: relative;
+            top: 30px;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.897);
+            flex-grow: 1;
+        }
+        .container2 {
+            position: relative;
+            top: 30px;
+            max-width: 500px; /* Menggunakan lebar maksimum yang tersedia */
+            margin: 20px auto; /* Menghapus margin horizontal */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.897);
+            flex-grow: 1;
+        }
+        .container-video {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.897);
+            flex-grow: 1;
+            overflow: hidden; /* Agar video tidak keluar dari kontainer */
+        }
+        .container-video iframe {
+            width: 500px; /* Video akan mengisi lebar kontainer */
+            height: 300px; /* Tinggi akan disesuaikan agar tidak terdistorsi */
+            margin: 20px auto;
+        }
+                
+        .foot{
+            max-width: 400px;
+            max-height: 195px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.897);
+            flex-grow: 1;
+        }
+        /* CSS untuk footer */
+        .foot img {
+            position: relative;
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+            bottom: 30px;
+            width: 120px; /* Mengatur lebar gambar sesuai kebutuhan */
+            height: auto; /* Menjaga aspek ratio gambar */
+            vertical-align: middle; /* Memposisikan gambar secara vertikal di tengah */
+        }
+        .foot p{
+            position: relative;
+            text-align: center;
+            bottom: 30px;
+            margin-bottom: 20px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        article {
+            line-height: 1.5;
+        }
+
+        .header-image {
+            max-width: 100%;
+            height: 400px;
+        }
+
+        @media (max-width: 768px) {
+            .header-image {
+                max-width: 100%;
+                height: auto;
+            }
+            .container {
+                padding: 10px;
+            }
+            .container2 {
+                padding: 10px;
+            }
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        input[type="text"],
+        textarea {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        textarea {
+            height: 150px;
+        }
+        
+        input[type="file"] {
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="password"]{
+            width: 90%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #555;
+        }
+
+        article {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin: 0;
+            color: #333;
+        }
+        
+        p {
+            font-size: 16px;
+            margin: 10px 0;
+            color: #666;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-top: 15px;
+        }
+        .btn{
+            position: relative;
+            left: 20px;
+        }
+        .btn-perubahan{
+            position: relative;
+            background-color: green;
+            color: white;
+            width: 150px;
+            height: 30px;
+            top: 40px;
+        }
+        .link-top{
+            text-decoration: none;
+        }
+        .whatsapp-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: fixed;
+            bottom: 50px;
+            max-width: 80px;
+            left: 90%; /* Menggeser ikon ke tengah */
+            transform: translateX(-30%); /* Menggeser ikon ke tengah */
+            z-index: 999; /* Pastikan ikon ini di atas konten lain */
+          }
+          
+          .whatsapp-icon a {
+            display: block;
+          }
+          
+          .whatsapp-icon img {
+            max-width: 100%; /* Ikon WhatsApp akan menyesuaikan lebar parent (div) */
+            height: auto;
+          }
+          .whatsapp-icon:hover{
+            max-width: 100px;
+          }
+          .btn-search{
+            padding: 10px;
+            background-color: rgb(74, 158, 74);
+            color: #f3f3f3;
+            border-radius: 10px;
+            width: 100px;
+          }
+          .btn-search:hover{
+            background-color: green;
+            font-weight: bold;
+            cursor: pointer;
+          }
+          .container-maps {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.897);
+            flex-grow: 1;
+            overflow: hidden; /* Agar video tidak keluar dari kontainer */
+        }
+        .container-maps iframe {
+            width: 800px; /* Maps akan mengisi lebar kontainer */
+            height: 300px;
+            margin: 20px auto;
+        }
+        /* Media queries untuk responsif */
+        @media (max-width: 800px) {
+            .container-maps iframe {
+                width: 400px; /* Mengisi lebar penuh saat layar lebih kecil dari 768px (tampilan mobile) */
+                height: 400px; /* Sesuaikan tinggi iframe sesuai kebutuhan */
+            }
+        }
+        .container-dokumen {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.897);
+            flex-grow: 1;
+            overflow: hidden; /* Agar video tidak keluar dari kontainer */
+        }
+        .container-dokumen iframe {
+            width: 800px; /* Maps akan mengisi lebar kontainer */
+            height: 500px;
+            margin: 20px auto;
+        }
+        /* Media queries untuk responsif */
+        @media (max-width: 800px) {
+            .container-dokumen iframe {
+                width: 550px; /* Mengisi lebar penuh saat layar lebih kecil dari 768px (tampilan mobile) */
+                height: 500px; /* Sesuaikan tinggi iframe sesuai kebutuhan */
+            }
+        }
+        audio {
+            display: none;
+        }
+          
